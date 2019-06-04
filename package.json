@@ -1,0 +1,17 @@
+{
+  "name": "mdx-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck src/index.js",
+    "build": "mdx-deck build deck.js",
+    "help": "mdx-deck"
+  },
+  "devDependencies": {
+    "mdx-deck": "2.3.2"
+  },
+  "keywords": [],
+  "author": "Scott Spence <spences10apps@gmail.com> (https://scottspence.me/)",
+  "license": "MIT"
+}
