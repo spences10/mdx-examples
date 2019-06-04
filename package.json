@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "mdx-deck src/index.js",
-    "build": "mdx-deck build deck.js",
+    "build": "mdx-deck build src/index.js",
     "help": "mdx-deck"
   },
   "devDependencies": {
