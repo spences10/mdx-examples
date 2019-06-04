@@ -6,10 +6,19 @@
   "scripts": {
     "start": "mdx-deck src/index.js",
     "build": "mdx-deck build src/index.js",
-    "help": "mdx-deck"
+    "help": "mdx-deck",
+    "format": "pretty-quick"
   },
   "devDependencies": {
-    "mdx-deck": "2.3.2"
+    "husky": "2.3.0",
+    "mdx-deck": "2.3.2",
+    "prettier": "1.17.1",
+    "pretty-quick": "1.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "keywords": [],
   "author": "Scott Spence <spences10apps@gmail.com> (https://scottspence.me/)",
