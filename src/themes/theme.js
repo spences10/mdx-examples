@@ -1,7 +1,7 @@
-import * as themes from "@mdx-deck/themes";
-import { MDXProvider } from "@mdx-js/react";
-import { ThemeProvider } from "emotion-theming";
-import React, { useContext, useState } from "react";
+import * as themes from '@mdx-deck/themes';
+import { MDXProvider } from '@mdx-js/react';
+import { ThemeProvider } from 'emotion-theming';
+import React, { useContext, useState } from 'react';
 
 const names = Object.keys(themes);
 
@@ -17,7 +17,8 @@ const Provider = props => {
   };
 
   const baseTheme = themes[name];
-  const theme = typeof baseTheme === "function" ? baseTheme({}) : baseTheme;
+  const theme =
+    typeof baseTheme === 'function' ? baseTheme({}) : baseTheme;
   const Root = theme.Provider || DefaultProvider;
 
   return (
@@ -31,20 +32,18 @@ const Provider = props => {
       </Context.Provider>
       <div
         css={{
-          position: "fixed",
+          position: 'fixed',
           right: 0,
           bottom: 0,
-          margin: 16
-        }}
-      >
+          margin: 16,
+        }}>
         <label>
           Theme
           <select
             value={name}
             onChange={e => {
               setTheme(e.target.value);
-            }}
-          >
+            }}>
             {names.map(name => (
               <option key={name}>{name}</option>
             ))}
@@ -63,5 +62,5 @@ export const ThemeName = props => {
 };
 
 export const theme = {
-  Provider
+  Provider,
 };
