@@ -1,6 +1,6 @@
 {
   "name": "mdx-examples",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "format": "pretty-quick"
   },
   "devDependencies": {
-    "husky": "2.3.0",
+    "husky": "2.4.1",
     "mdx-deck": "2.3.2",
     "prettier": "1.17.1",
     "pretty-quick": "1.11.0"
